@@ -18,7 +18,7 @@ function FunctionName()
 
 echo FunctionName();
 
-$first_array = array("\nLox", 18 , "cool", 4 , "oga");
+$first_array = array("\n Lox", 18 , "cool", 4 , "oga");
 
 echo count($first_array);
 
@@ -35,3 +35,13 @@ $change_me[4] = 5;
 $change_me[1] = "tadpole";
 
 echo implode(",", $change_me);
+
+$stack = ["\nwild success", "\nfailure", "\nstruggle"];
+$new_stack = array_push($stack, "blocker ", "impediment");
+
+$poped = array_pop($stack);
+$poped = array_pop($stack);
+$poped = array_pop($stack);
+$poped = array_pop($stack);
+
+echo implode("\n<", $stack);
