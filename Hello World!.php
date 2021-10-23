@@ -45,3 +45,23 @@ $poped = array_pop($stack);
 $poped = array_pop($stack);
 
 echo implode("\n<", $stack);
+
+$record_holders = [];
+// Write your code below:
+
+$ch_record = array_unshift(
+    $record_holders,
+    "Tim Montgomery ",
+    "Maurice Greene ",
+    "Donovan Bailey ",
+    "Leroy Burrell  ",
+    "Carl Lewis     ",
+);
+
+$ch_record    = array_unshift($record_holders, "Justin Gatlin", "Asafa Powell");
+
+$ch_record_pr = array_shift($record_holders);
+$wrong_js     = array_shift($record_holders);
+$add_usain    = array_unshift($record_holders, "\nUsain Bolt");
+
+echo implode(",", $record_holders);
